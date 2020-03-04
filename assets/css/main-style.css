@@ -82,6 +82,7 @@ a{
 	display: flex;
 	flex-direction: column;
 	font-size: 6vmax;
+	margin:0;
 }
 .pfrx_maincover_heading_descr{
 	font-size: 1.65vmax;
