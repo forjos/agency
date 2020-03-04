@@ -69,7 +69,12 @@ a{
 
 /*** home ***/
 /* maincover */
-.pfrx_maincover{
+.pfrx_maincover_container{
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center;
+}
+.pfrx_maincover_container{
 	min-height: 100vh;
 	opacity: 0;
 	transition: 1s;

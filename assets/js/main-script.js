@@ -3,7 +3,7 @@ $(function(){
 	var nav_height = $('.pfrx_header_nav').height();
 	var contactbtn = $('.pfrx_maincover_about_contactbtn_box').width();
 	var portfoliolist_item = $('.pfrx_portfoliolist_shot').width();
-	$('.pfrx_maincover').css({'padding-top': nav_height + 20, 'opacity': 1});
+	$('.pfrx_maincover_container').css({'padding-top': nav_height + 20, 'opacity': 1});
 	$('.pfrx_maincover_about_contactbtn').height(contactbtn);
 	$('.pfrx_portfoliolist_shot').height(portfoliolist_item / 1.8);
 
