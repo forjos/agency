@@ -1,0 +1,142 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	background-color: #8E4324;
+	color: #E1D3B9;
+}
+a{
+	color: #E1D3B9;
+	text-decoration: none;
+}
+*{
+	box-sizing: border-box;
+	outline: none;
+}
+
+
+/* menu */
+.pfrx_header{
+	position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: 30px 0 20px;
+}
+.pfrx_header a{
+	text-decoration: none;
+}
+.pfrx_header ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	position: fixed;
+    left: auto;
+    top: auto;
+    z-index: 999;
+}
+.pfrx_header_nav li{
+	padding:4px 0;
+}
+.pfrx_header_nav a{
+	text-transform: uppercase;
+	font-size:1.4em;
+	position: relative;
+	transition: letter-spacing .3s, padding .3s;
+}
+.pfrx_header_nav a:hover{
+	letter-spacing: -3.5px;
+	padding-right:28px;
+}
+.pfrx_header_nav a:after{
+	content:'';
+	width:100%;
+	height:1px;
+	background-color: #E1D3B9;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	transition: .3s;
+}
+.pfrx_header_nav a:hover:after{
+	width:0;
+}
+.pfrx_header_logo{
+	text-align: right;
+	text-transform: uppercase;
+}
+
+
+/*** home ***/
+/* maincover */
+.pfrx_maincover{
+	min-height: 100vh;
+	opacity: 0;
+	transition: 1s;
+}
+.pfrx_maincover_heading_box{
+	grid-column: 4/9;
+	grid-row: 1/2;
+}
+.pfrx_maincover_heading{
+	display: flex;
+	flex-direction: column;
+	font-size: 6vmax;
+}
+.pfrx_maincover_heading_descr{
+	font-size: 1.65vmax;
+}
+
+.pfrx_maincover_about{
+	grid-column: 9 / end;
+	grid-row: 2/3;
+	display: flex;
+    align-items: flex-end;
+    padding-bottom: 30px;
+}
+.pfrx_maincover_about_text_wrapper{
+	display: flex;
+	justify-content: center;
+    align-items: center;
+}
+.pfrx_maincover_about_text_box{
+	flex: 1;
+    font-size: 1.25em;
+    padding: 10px;
+}
+.pfrx_maincover_about_contactbtn{
+	padding: 0 40px;
+    background: #FF6347;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 1.5em;
+}
+.pfrx_maincover_about_contactbtn_box a{
+	text-decoration: none;
+}
+
+/* portfoliolist */
+.pfrx_portfoliolist{
+	margin: 8em 0;
+}
+.pfrx_portfoliolist>ul{
+	list-style-type: none;
+}
+.pfrx_portfoliolist_row{
+	grid-column: 4/end;
+	margin: 0 0 6em;
+}
+.pfrx_portfoliolist_link_col{
+	display:flex;
+	flex-direction:column;
+}
+.pfrx_portfoliolist_shot{
+	background-size: cover;
+	background-position: center;
+}
+.pfrx_portfoliolist_shot_col{
+	grid-gap: 20px;
+}
