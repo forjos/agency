@@ -69,7 +69,7 @@ a{
 
 /*** home ***/
 /* maincover */
-.pfrx_maincover_container{
+.pfrx_maincover{
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: center;
