@@ -1,9 +1,21 @@
+@font-face {
+  font-family: 'Bon Voyage';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/OpenSans-Regular-webfont.woff2") format("woff2"),
+ /* unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;*/
+
+}
+
 body{
 	margin: 0;
 	padding: 0;
 	font-size: 18px;
-	background-color: #8E4324;
+	/*background-color: #8E4324;*/
 	color: #E1D3B9;
+	font-family: 'Bon Voyage';
+	background-image: url(assets/imgwork/hiddenherc1.jpg);
 }
 a{
 	color: #E1D3B9;
@@ -73,6 +85,16 @@ a{
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: center;
+	/*background-image: url(https://images.unsplash.com/photo-1504738165310-a8d01a22fbbd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjF9&auto=format&fit=crop&w=1800&q=80);*/
+	/*background-image: url(https://images.unsplash.com/photo-1496147539180-13929f8aa03a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);*/
+	/*background-image: url(https://images.unsplash.com/photo-1527203561188-dae1bc1a417f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1916&q=80);*/
+	/*background-image: url(https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1900&q=80);*/
+	/*background-image: url(https://images.unsplash.com/photo-1522938974444-f12497b69347?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1897&q=80);*/
+	/*background-image: url(https://images.unsplash.com/photo-1525614686090-7a3108e3758e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80);*/
+	/*background-image: url(https://images.unsplash.com/photo-1520880178538-52017968d5d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80);*/
+	/*background-image: url(https://images.unsplash.com/photo-1536094517470-a9784e41e283?ixlib=rb-1.2.1&auto=format&fit=crop&w=1955&q=80);*/
+	/*background-image: url(https://images.unsplash.com/photo-1503602642458-232111445657?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1868&q=80);*/
+	/*background-image: url(https://images.unsplash.com/photo-1468174482686-1047396f13b3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);*/
 }
 .pfrx_maincover_container{
 	min-height: 100vh;
