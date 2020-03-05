@@ -11,8 +11,7 @@ body{
 	font-size: 18px;
 	background-color: #8E4324;
 	color: #E1D3B9;
-	font-family: 'BonVoyage';
-	font-weight: 400;
+	font-family: 'Nunito', sans-serif;
 }
 a{
 	color: #E1D3B9;
@@ -22,7 +21,10 @@ a{
 	box-sizing: border-box;
 	outline: none;
 }
-
+h1, h2, h3{
+	font-family: 'BonVoyage';
+	font-weight: 400;
+}
 
 /* menu */
 .pfrx_header{
@@ -31,6 +33,7 @@ a{
     left: 0;
     top: 0;
     padding: 30px 0 20px;
+    font-family: 'BonVoyage';
 }
 .pfrx_header a{
 	text-decoration: none;
@@ -107,13 +110,15 @@ a{
 	flex-direction: column;
 	font-size: 6vmax;
 	margin:0;
+	font-weight: 100;
 }
 .pfrx_maincover_heading_descr{
 	font-size: 1.65vmax;
+	font-family: 'BonVoyage';
 }
 
 .pfrx_maincover_about{
-	grid-column: 9 / end;
+	grid-column: 8 / end;
 	grid-row: 2/3;
 	display: flex;
     align-items: flex-end;
@@ -123,21 +128,25 @@ a{
 	display: flex;
 	justify-content: center;
     align-items: center;
+    width: 100%;
 }
 .pfrx_maincover_about_text_box{
 	flex: 1;
     font-size: 1.25em;
-    padding: 10px;
+    padding: 0 30px;
+    display: flex;
+    justify-content: flex-end;
 }
 .pfrx_maincover_about_contactbtn{
 	padding: 0 40px;
-    background: #FF6347;
+    background: #DF9C65;
     border-radius: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #ffffff;
     font-size: 1.5em;
+    font-family: 'BonVoyage';
 }
 .pfrx_maincover_about_contactbtn_box a{
 	text-decoration: none;
