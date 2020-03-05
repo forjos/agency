@@ -182,10 +182,13 @@ h1, h2, h3{
 .pfrx_portfoliolist_row{
 	grid-column: 4/end;
 	margin: 0 0 6em;
+	opacity: 0;
+	transition: opacity .9s cubic-bezier(.66,.53,.15,1.53);
 }
 .pfrx_portfoliolist_link_col{
 	display:flex;
 	flex-direction:column;
+	align-items: flex-start;
 }
 .pfrx_portfoliolist_shot{
 	background-size: cover;
@@ -193,4 +196,28 @@ h1, h2, h3{
 }
 .pfrx_portfoliolist_shot_col{
 	grid-gap: 20px;
+}
+.pfrx_portfoliolist_link_go{
+	position: relative;
+	margin-top: 5px;
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+    transition: letter-spacing .3s, padding .3s;
+}
+.pfrx_portfoliolist_link_go:after{
+	content: '';
+	width: 100%;
+	height: 1px;
+	background-color: #E1D3B9;
+	position: absolute;
+	left: 0;
+	bottom: 0px;
+	transition: .3s;
+}
+.pfrx_portfoliolist_link_go:hover{
+	letter-spacing: -1px;
+	padding-right:28px;
+}
+.pfrx_portfoliolist_link_go:hover:after{
+	width: 0;
 }

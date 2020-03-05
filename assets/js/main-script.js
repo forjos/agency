@@ -64,5 +64,30 @@ $(function(){
 
 
 
+/* scroll project */
+
+$('.pfrx_portfoliolist_row').each(function(index){
+	var el = $(this),
+    	    delay = 0.05 * index + 's'
+    	el.css({
+    	  'transition-delay': delay,
+    	});  
+});
+$(window).scroll(function() {
+    $(".pfrx_portfoliolist_row").each(function() {
+        const position = $(this).offset().top;
+        const scroll = $(window).scrollTop();
+        const windowHeight = $(window).height();
+        if (scroll > position - windowHeight - 10) {
+            $(this).css({
+            'opacity' : 1
+            });
+        }
+    });
+});
+
+/* scroll project end */
+
+
 // jQuery('.category_btn_triger').click(function(event){
 // });
