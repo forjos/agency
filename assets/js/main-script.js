@@ -1,5 +1,6 @@
 /* auto height services listimg > img */
-type="text/javascript">jQuery(document).ready(function($) {
+// type="text/javascript">jQuery(document).ready(function($) {
+$(function(){
 	var nav_height = $('.pfrx_header_nav').height();
 	var contactbtn = $('.pfrx_maincover_about_contactbtn_box').width();
 	var portfoliolist_item = $('.pfrx_portfoliolist_shot').width();
@@ -33,11 +34,12 @@ type="text/javascript">jQuery(document).ready(function($) {
 
 
 
-type="text/javascript">jQuery(document).ready(function($) {
+// type="text/javascript">jQuery(document).ready(function($) {
+$(function(){
 /* плавный transition меню */
  $('.pfrx_header_nav>li').each(function(index){
           var el = $(this),
-              delay = 0.1 + 0.05 * index + 's'
+              delay = 0.3 + 0.05 * index + 's'
           el.css({
             'transition-delay': delay,
             'opacity' : 1
@@ -45,20 +47,19 @@ type="text/javascript">jQuery(document).ready(function($) {
         });
  /* плавный transition меню end */
 
- /* плавный transition coer */
+ /* плавный transition cover */
+ $('.pfrx_maincover_heading_descr').css('opacity', 1);
  $('.pfrx_maincover_heading>span').each(function(index){
           var el = $(this),
-              delay = 0.05 * index + 's'
+              delay = 0.1 + 0.05 * index + 's'
           el.css({
             'transition-delay': delay,
             'opacity' : 1
           });    
         });
- /* плавный transition coer end */
-
- /* появлние about в cover */
  $('.pfrx_maincover_about_text_wrapper').css('opacity', 1);
- /* появлние about в cover end */
+ /* плавный transition cover end */
+
  });
 
 

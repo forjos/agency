@@ -80,7 +80,7 @@ h1, h2, h3{
 /** munu animation */
 .pfrx_header_nav>li{
 	opacity: 0;
-	transition: all .9s cubic-bezier(.66,.53,.15,1.53);
+	transition: opacity .9s cubic-bezier(.66,.53,.15,1.53);
 }
 
 /*** home ***/
@@ -156,15 +156,19 @@ h1, h2, h3{
 	text-decoration: none;
 }
 /** animation cover */
+/*.pfrx_maincover_heading_descr{
+	opacity: 0;
+	transition: opacity .9s cubic-bezier(.66,.53,.15,1.53);
+}
 .pfrx_maincover_heading>span{
 	opacity: 0;
-	transition: all .9s cubic-bezier(.66,.53,.15,1.53);
+	transition: opacity .9s cubic-bezier(.66,.53,.15,1.53);
 }
 .pfrx_maincover_about_text_wrapper{
 	opacity: 0;
-	transition: all .9s cubic-bezier(.66,.53,.15,1.53);
+	transition: opacity .9s cubic-bezier(.66,.53,.15,1.53);
 	transition-delay: .3s;
-}
+}*/
 /** animation cover end */
 
 
