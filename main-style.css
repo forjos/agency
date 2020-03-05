@@ -77,7 +77,11 @@ h1, h2, h3{
 	text-align: right;
 	text-transform: uppercase;
 }
-
+/** munu animation */
+.pfrx_header_nav>li{
+	opacity: 0;
+	transition: all .9s cubic-bezier(.66,.53,.15,1.53);
+}
 
 /*** home ***/
 /* maincover */
@@ -98,8 +102,8 @@ h1, h2, h3{
 }
 .pfrx_maincover_container{
 	min-height: 100vh;
-	opacity: 0;
-	transition: 1s;
+	/*opacity: 0;*/
+	/*transition: 1s;*/
 }
 .pfrx_maincover_heading_box{
 	grid-column: 4/9;
@@ -151,6 +155,18 @@ h1, h2, h3{
 .pfrx_maincover_about_contactbtn_box a{
 	text-decoration: none;
 }
+/** animation cover */
+.pfrx_maincover_heading>span{
+	opacity: 0;
+	transition: all .9s cubic-bezier(.66,.53,.15,1.53);
+}
+.pfrx_maincover_about_text_wrapper{
+	opacity: 0;
+	transition: all .9s cubic-bezier(.66,.53,.15,1.53);
+	transition-delay: .3s;
+}
+/** animation cover end */
+
 
 /* portfoliolist */
 .pfrx_portfoliolist{

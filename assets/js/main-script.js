@@ -1,9 +1,10 @@
 /* auto height services listimg > img */
-$(function(){
+type="text/javascript">jQuery(document).ready(function($) {
 	var nav_height = $('.pfrx_header_nav').height();
 	var contactbtn = $('.pfrx_maincover_about_contactbtn_box').width();
 	var portfoliolist_item = $('.pfrx_portfoliolist_shot').width();
-	$('.pfrx_maincover_container').css({'padding-top': nav_height + 20, 'opacity': 1});
+	// $('.pfrx_maincover_container').css({'padding-top': nav_height + 20, 'opacity': 1});
+	$('.pfrx_maincover_container').css('padding-top', nav_height + 20);
 	$('.pfrx_maincover_about_contactbtn').height(contactbtn);
 	$('.pfrx_portfoliolist_shot').height(portfoliolist_item / 1.8);
 
@@ -27,4 +28,40 @@ $(function(){
 //         jQuery('.sunplace_hamburger_box').toggleClass('sunplace_hamburger_box_acive');
 //         jQuery('body').toggleClass('body_hidden');
 //     });
+// });
+
+
+
+
+type="text/javascript">jQuery(document).ready(function($) {
+/* плавный transition меню */
+ $('.pfrx_header_nav>li').each(function(index){
+          var el = $(this),
+              delay = 0.1 + 0.05 * index + 's'
+          el.css({
+            'transition-delay': delay,
+            'opacity' : 1
+          });    
+        });
+ /* плавный transition меню end */
+
+ /* плавный transition coer */
+ $('.pfrx_maincover_heading>span').each(function(index){
+          var el = $(this),
+              delay = 0.05 * index + 's'
+          el.css({
+            'transition-delay': delay,
+            'opacity' : 1
+          });    
+        });
+ /* плавный transition coer end */
+
+ /* появлние about в cover */
+ $('.pfrx_maincover_about_text_wrapper').css('opacity', 1);
+ /* появлние about в cover end */
+ });
+
+
+
+// jQuery('.category_btn_triger').click(function(event){
 // });
