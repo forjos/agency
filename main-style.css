@@ -77,12 +77,6 @@ h1, h2, h3{
 	text-align: right;
 	text-transform: uppercase;
 }
-/** munu animation */
-.pfrx_header_nav>li{
-	opacity: 0;
-	transition: opacity .9s cubic-bezier(.66,.53,.15,1.53);
-}
-
 /*** home ***/
 /* maincover */
 .pfrx_maincover{
