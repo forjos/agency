@@ -145,6 +145,7 @@ h1, h2, h3{
     color: #ffffff;
     font-size: 1.5em;
     font-family: 'BonVoyage';
+    height: 100%;
 }
 .pfrx_maincover_about_contactbtn_box a{
 	text-decoration: none;

@@ -2,16 +2,16 @@
 type="text/javascript">jQuery(document).ready(function($) {
 // $(function(){
 	var nav_height = $('.pfrx_header_nav').height();
-	var contactbtn = $('.pfrx_maincover_about_contactbtn_box').width();
+	// var contactbtn = $('.pfrx_maincover_about_contactbtn').width();
 	var portfoliolist_item = $('.pfrx_portfoliolist_shot').width();
 	// $('.pfrx_maincover_container').css({'padding-top': nav_height + 20, 'opacity': 1});
 	$('.pfrx_maincover_container').css('padding-top', nav_height + 20);
-	$('.pfrx_maincover_about_contactbtn').height(contactbtn);
+	// $('.pfrx_maincover_about_contactbtn').height(contactbtn);
 	$('.pfrx_portfoliolist_shot').height(portfoliolist_item / 1.8);
 
 
 	$(window).on('resize', function(e) {
-		$('.pfrx_maincover_about_contactbtn').height(contactbtn);
+		// $('.pfrx_maincover_about_contactbtn').height(contactbtn);
 		$('.pfrx_portfoliolist_shot').height(portfoliolist_item / 1.8);
 	});
 
@@ -21,6 +21,13 @@ type="text/javascript">jQuery(document).ready(function($) {
 	// });
 });
 
+
+type="text/javascript">jQuery(document).ready(function($) {
+	jQuery('.pfrx_maincover_about_contactbtn').height(jQuery('.pfrx_maincover_about_contactbtn').outerWidth());
+	jQuery(window).on('resize', function(e) {
+		jQuery('.pfrx_maincover_about_contactbtn').height(jQuery('.pfrx_maincover_about_contactbtn').outerWidth());
+	});
+});
 
 // hamburger
 // type = "text/javascript" > jQuery(document).ready(function(jQuery) {
@@ -34,8 +41,8 @@ type="text/javascript">jQuery(document).ready(function($) {
 
 
 
-type="text/javascript">jQuery(document).ready(function($) {
-// $(function(){
+// type="text/javascript">jQuery(document).ready(function($) {
+$(function(){
 /* плавный transition меню */
  $('.pfrx_header_nav>li').each(function(index){
           var el = $(this),
