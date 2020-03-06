@@ -136,7 +136,8 @@ h1, h2, h3{
     justify-content: flex-end;
 }
 .pfrx_maincover_about_contactbtn{
-	padding: 0 40px;
+	/*padding: 0 40px;*/
+	width: 170px;
     background: #DF9C65;
     border-radius: 100%;
     display: flex;
