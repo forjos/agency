@@ -1,6 +1,6 @@
 /* auto height services listimg > img */
-// type="text/javascript">jQuery(document).ready(function($) {
-$(function(){
+type="text/javascript">jQuery(document).ready(function($) {
+// $(function(){
 	var nav_height = $('.pfrx_header_nav').height();
 	var contactbtn = $('.pfrx_maincover_about_contactbtn_box').width();
 	var portfoliolist_item = $('.pfrx_portfoliolist_shot').width();
@@ -34,8 +34,8 @@ $(function(){
 
 
 
-// type="text/javascript">jQuery(document).ready(function($) {
-$(function(){
+type="text/javascript">jQuery(document).ready(function($) {
+// $(function(){
 /* плавный transition меню */
  $('.pfrx_header_nav>li').each(function(index){
           var el = $(this),
