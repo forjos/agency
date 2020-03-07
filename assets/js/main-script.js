@@ -73,13 +73,13 @@ $(function(){
 
 /* scroll project */
 
-$('.pfrx_portfoliolist_row').each(function(index){
-	var el = $(this),
-    	    delay = 0.05 * index + 's'
-    	el.css({
-    	  'transition-delay': delay,
-    	});  
-});
+// $('.pfrx_portfoliolist_row').each(function(index){
+// 	var el = $(this),
+//     	    delay = 0.05 * index + 's'
+//     	el.css({
+//     	  'transition-delay': delay,
+//     	});  
+// });
 $(window).scroll(function() {
     $(".pfrx_portfoliolist_row").each(function() {
         const position = $(this).offset().top;
@@ -95,6 +95,20 @@ $(window).scroll(function() {
 
 /* scroll project end */
 
+
+/* ui animation */
+$('.pfrx_el_opacity').each(function(index){
+  var el = $(this),
+          delay = 0.15 + 0.15 * index + 's'
+      el.css({
+        'transition-delay': delay,
+      });  
+});
+
+type="text/javascript">jQuery(document).ready(function($) {
+  $('.pfrx_el_opacity').css('opacity', 1);
+});
+/* ui animation end */
 
 // jQuery('.category_btn_triger').click(function(event){
 // });

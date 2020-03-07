@@ -26,6 +26,22 @@ h1, h2, h3{
 	font-weight: 400;
 }
 
+.pfrx_main{
+	padding-top: 200px;
+}
+.pfrx_main_container_xs{
+	width: 100%;
+	max-width: 405px;
+	margin: auto;
+	grid-column: 4/10;
+}
+
+/* ui animation */
+.pfrx_el_opacity{
+	opacity: 0;
+	transition: opacity .9s;
+}
+
 /* menu */
 .pfrx_header{
 	position: absolute;
@@ -220,4 +236,28 @@ h1, h2, h3{
 }
 .pfrx_portfoliolist_link_go:hover:after{
 	width: 0;
+}
+
+
+/* about */
+.pfrx_about_header_containrt{
+	
+}
+.pfrx_about_header_box{
+	background: #E2CFC0;
+    height: 537px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+.pfrx_about_header{
+	color: #602C17;
+    font-size: 5.8em;
+    margin: 0;
+}
+.pfrx_about_header_descr_box{
+    font-size:1.2em	
 }
