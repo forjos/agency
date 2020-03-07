@@ -147,6 +147,10 @@ h1, h2, h3{
     font-size: 1.5em;
     font-family: 'BonVoyage';
     height: 100%;
+    transition: letter-spacing .3s;
+}
+.pfrx_maincover_about_contactbtn:hover{
+	letter-spacing: -2.5px;
 }
 .pfrx_maincover_about_contactbtn_box a{
 	text-decoration: none;
@@ -179,7 +183,7 @@ h1, h2, h3{
 	grid-column: 4/end;
 	margin: 0 0 6em;
 	opacity: 0;
-	transition: opacity .9s cubic-bezier(.66,.53,.15,1.53);
+	transition: opacity .9s
 }
 .pfrx_portfoliolist_link_col{
 	display:flex;
