@@ -286,4 +286,6 @@ h1, h2, h3{
 .pfrx_team_photo{
 	width: 100%;
 	background-color: #b55f3b;
+	background-size: cover;
+	background-position: center;
 }
