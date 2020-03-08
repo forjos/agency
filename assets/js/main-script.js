@@ -121,7 +121,7 @@ type="text/javascript">jQuery(document).ready(function($) {
   $('.pfrx_team_photo').height(teamitem_height * 1.3);
 
   $(window).on('resize', function(e) {
-    $('.pfrx_team_photo').width(teamitem_height * 1.3);
+    $('.pfrx_team_photo').height(teamitem_height * 1.3);
   });
 
   // $('.height').height($('.sunplace_services_listimg_img').width());
