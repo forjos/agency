@@ -112,3 +112,21 @@ type="text/javascript">jQuery(document).ready(function($) {
 
 // jQuery('.category_btn_triger').click(function(event){
 // });
+
+
+
+/* auto height for page about */
+type="text/javascript">jQuery(document).ready(function($) {
+  var teamitem_height = $('.pfrx_team_photo').height();
+  $('.pfrx_team_photo').height(teamitem_height / 1.1);
+
+  $(window).on('resize', function(e) {
+    $('.pfrx_team_photo').height(teamitem_height / 1.1);
+  });
+
+  // $('.height').height($('.sunplace_services_listimg_img').width());
+  // $(window).on('resize', function(e) {
+  //  $('.sunplace_services_listimg_img').height($('.sunplace_services_listimg_img').width());
+  // });
+});
+/* auto height for page about end */

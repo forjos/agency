@@ -29,11 +29,13 @@ h1, h2, h3{
 .pfrx_main{
 	padding-top: 200px;
 }
+.pfrx_main_container{
+	grid-column: 4/10;
+}
 .pfrx_main_container_xs{
 	width: 100%;
 	max-width: 405px;
 	margin: auto;
-	grid-column: 4/10;
 }
 
 /* ui animation */
@@ -240,9 +242,6 @@ h1, h2, h3{
 
 
 /* about */
-.pfrx_about_header_containrt{
-	
-}
 .pfrx_about_header_box{
 	background: #E2CFC0;
     height: 537px;
@@ -260,4 +259,23 @@ h1, h2, h3{
 }
 .pfrx_about_header_descr_box{
     font-size:1.2em	
+}
+/** team **/
+.pfrx_team_list{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+}
+.pfrx_team_photo{
+	width: 100%;
+    height: 300px;
+	background-color: #b55f3b;
+}
+.pfrx_team_item{
+	grid-column: 5/9;
+}
+.pfrx_team_item:nth-child(2n){
+	grid-column: 1/5;
 }
