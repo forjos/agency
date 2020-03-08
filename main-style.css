@@ -276,6 +276,7 @@ h1, h2, h3{
 .pfrx_team_item{
 	grid-template-columns: repeat(6, 1fr);
 	display: grid;
+	margin-bottom: 6em;
 }
 .pfrx_team_item_box{
     grid-column: 3/5;
@@ -294,4 +295,12 @@ h1, h2, h3{
 	background-color: #b55f3b;
 	background-size: cover;
 	background-position: center;
+}
+.pfrx_team_name{
+	font-size:1.2em;
+}
+.pfrx_team_post{
+	margin-top:10px;
+	font-size:.95em;
+	max-width:200px;
 }
