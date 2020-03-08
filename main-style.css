@@ -208,6 +208,11 @@ h1, h2, h3{
 	flex-direction:column;
 	align-items: flex-start;
 }
+.pfrx_portfoliolist_link_name {
+	font-family: BonVoyage;
+	max-width: 185px;
+	margin-bottom: 25px;
+}
 .pfrx_portfoliolist_shot{
 	background-size: cover;
 	background-position: center;
@@ -219,7 +224,7 @@ h1, h2, h3{
 	position: relative;
 	margin-top: 5px;
     letter-spacing: 0.1em;
-    text-transform: capitalize;
+    /*text-transform: capitalize;*/
     transition: letter-spacing .3s, padding .3s;
 }
 .pfrx_portfoliolist_link_go:after{
