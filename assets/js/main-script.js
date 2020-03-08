@@ -117,11 +117,11 @@ type="text/javascript">jQuery(document).ready(function($) {
 
 /* auto height for page about */
 type="text/javascript">jQuery(document).ready(function($) {
-  var teamitem_height = $('.pfrx_team_photo').height();
-  $('.pfrx_team_photo').height(teamitem_height / 1.1);
+  var teamitem_height = $('.pfrx_team_photo').width();
+  $('.pfrx_team_photo').height(teamitem_height * 1.3);
 
   $(window).on('resize', function(e) {
-    $('.pfrx_team_photo').height(teamitem_height / 1.1);
+    $('.pfrx_team_photo').width(teamitem_height * 1.3);
   });
 
   // $('.height').height($('.sunplace_services_listimg_img').width());
