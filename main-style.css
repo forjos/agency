@@ -30,12 +30,13 @@ h1, h2, h3{
 	padding-top: 200px;
 }
 .pfrx_main_container{
-	grid-column: 4/10;
+	grid-column: 5/10;
 }
 .pfrx_main_container_xs{
 	width: 100%;
 	max-width: 405px;
 	margin: auto;
+	grid-column: 5/9;
 }
 
 /* ui animation */
