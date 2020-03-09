@@ -96,6 +96,11 @@ h1, h2, h3{
 	text-align: right;
 	text-transform: uppercase;
 }
+
+.zatomay_logo img,
+.zatomay_logo svg {
+	max-width: 182px;
+}
 /*** home ***/
 /* maincover */
 .pfrx_maincover{
