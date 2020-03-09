@@ -212,6 +212,7 @@ h1, h2, h3{
 .pfrx_portfoliolist_link_name {
 	font-family: BonVoyage;
 	font-size: 1.3em;
+	line-height: 1.4em;
 	margin-bottom: 25px;
 }
 .pfrx_portfoliolist_shot{
