@@ -30,7 +30,11 @@ h1, h2, h3{
 	padding-top: 200px;
 }
 .pfrx_main_container{
-	grid-column: 5/10;
+	/*grid-column: 5/10;*/
+	grid-column: 4/end;
+}
+.pfrx_main_container_center{
+	grid-column: 4/10;
 }
 .pfrx_main_container_xs{
 	width: 100%;
@@ -309,4 +313,57 @@ h1, h2, h3{
 	margin-top:10px;
 	font-size:.95em;
 	max-width:200px;
+}
+
+
+
+
+/* about menu */
+.pfrx_about_nav{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	position:fixed;
+	left:1vw;
+	top:50%;
+	transform:translateY(-50%);
+}
+.pfrx_about_nav{
+	font-size:.95em;
+	font-weight:100;
+}
+.pfrx_about_nav>li{
+	opacity: 0;
+	transition: opacity .9s;
+}
+.pfrx_about_nav a{
+	transition:.3s;
+}
+.pfrx_about_nav a:hover{
+	padding-right: 15px;
+	letter-spacing: -1.4px;
+}
+
+/* client */
+.pfrx_main_container{
+	overflow-x: hidden;
+	position: relative;
+}
+.pfrx_slide_logobox{
+	display:flex;
+	align-items:center;
+	justify-content: center;
+	height: auto;
+}
+.pfrx_client_listbox{
+	/*display: grid;
+	grid-template-columns: repeat(3, 1fr);*/
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	grid-gap: 50px;
+}
+.pfrx_client_logo_box{
+	display:flex;
+	align-items:center;
 }

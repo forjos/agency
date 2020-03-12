@@ -10,8 +10,10 @@ type="text/javascript">jQuery(document).ready(function($) {
 	$('.pfrx_portfoliolist_shot').height(portfoliolist_item / 1.8);
 
 
-	$(window).on('resize', function(e) {
+	// $(window).on('resize', function(e) {
+  jQuery(window).resize(function() {
 		// $('.pfrx_maincover_about_contactbtn').height(contactbtn);
+    var portfoliolist_item = $('.pfrx_portfoliolist_shot').width();
 		$('.pfrx_portfoliolist_shot').height(portfoliolist_item / 1.8);
 	});
 
@@ -24,7 +26,8 @@ type="text/javascript">jQuery(document).ready(function($) {
 
 type="text/javascript">jQuery(document).ready(function($) {
 	jQuery('.pfrx_maincover_about_contactbtn').height(jQuery('.pfrx_maincover_about_contactbtn').outerWidth());
-	jQuery(window).on('resize', function(e) {
+	// jQuery(window).on('resize', function(e) {
+  jQuery(window).resize(function() {
 		jQuery('.pfrx_maincover_about_contactbtn').height(jQuery('.pfrx_maincover_about_contactbtn').outerWidth());
 	});
 });
@@ -69,6 +72,31 @@ $(function(){
 
  });
 
+
+
+/* menu about */
+$(function(){
+/* плавный transition меню */
+ $('.pfrx_about_nav>li').each(function(index){
+          var el = $(this),
+              delay = 0.3 + 0.05 * index + 's'
+          el.css({
+            'transition-delay': delay,
+            'opacity' : 1
+          });    
+        });
+ });
+/* menu about end */
+
+
+/* smooth scroll */
+$(function() {
+  $('.pfrx_about_nav a').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 900);
+  });
+});
+/* smooth scroll end */
 
 
 /* scroll project */
@@ -120,7 +148,9 @@ type="text/javascript">jQuery(document).ready(function($) {
   var teamitem_height = $('.pfrx_team_photo').width();
   $('.pfrx_team_photo').height(teamitem_height * 1.3);
 
-  $(window).on('resize', function(e) {
+  // $(window).on('resize', function(e) {
+  jQuery(window).resize(function() {
+    var teamitem_height = $('.pfrx_team_photo').width();
     $('.pfrx_team_photo').height(teamitem_height * 1.3);
   });
 
@@ -130,3 +160,21 @@ type="text/javascript">jQuery(document).ready(function($) {
   // });
 });
 /* auto height for page about end */
+
+
+
+/* client */
+type="text/javascript">jQuery(document).ready(function($) {
+ var swiper = new Swiper('.pfrx_swiper_container', {
+      slidesPerView: 5.8,
+      spaceBetween: 20,
+      freeMode: true,
+      grabCursor: true,
+      loop: true,
+      autoplay: {
+        delay: 200,
+    },
+    speed: 1200,
+    });
+});
+ /* client end*/
