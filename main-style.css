@@ -345,14 +345,25 @@ h1, h2, h3{
 }
 
 /* client */
-.pfrx_main_container{
+.pfrx_swiper_container{
 	overflow-x: hidden;
 	position: relative;
+}
+.pfrx_swiper_heading_box{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+}
+.pfrx_swiper_heading{
+	margin: 0;
 }
 .pfrx_slide_logobox{
 	display:flex;
 	align-items:center;
-	justify-content: center;
 	height: auto;
 }
 .pfrx_client_listbox{

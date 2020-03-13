@@ -166,15 +166,14 @@ type="text/javascript">jQuery(document).ready(function($) {
 /* client */
 type="text/javascript">jQuery(document).ready(function($) {
  var swiper = new Swiper('.pfrx_swiper_container', {
-      slidesPerView: 5.8,
-      spaceBetween: 20,
-      freeMode: true,
-      grabCursor: true,
+   spaceBetween: 30,
+      effect: 'fade',
+      fadeEffect: { crossFade: true },
+     autoplay: {
+        delay: 250,
+        disableOnInteraction: true,
+      },
       loop: true,
-      autoplay: {
-        delay: 200,
-    },
-    speed: 1200,
     });
 });
  /* client end*/
