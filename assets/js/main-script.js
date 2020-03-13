@@ -108,8 +108,15 @@ $(function() {
 //     	  'transition-delay': delay,
 //     	});  
 // });
+
+$(function() {
+$(".pfrx_portfoliolist_page .pfrx_portfoliolist_row:nth-child(1)").css({
+            'opacity' : 1
+            });
+});
+
 $(window).scroll(function() {
-    $(".pfrx_portfoliolist_row").each(function() {
+    $(".pfrx_portfoliolist_home .pfrx_portfoliolist_row").each(function() {
         const position = $(this).offset().top;
         const scroll = $(window).scrollTop();
         const windowHeight = $(window).height();
@@ -119,6 +126,19 @@ $(window).scroll(function() {
             });
         }
     });
+
+
+    $(".pfrx_portfoliolist_page .pfrx_portfoliolist_row:nth-child(n+2)").each(function() {
+        const position = $(this).offset().top;
+        const scroll = $(window).scrollTop();
+        const windowHeight = $(window).height();
+        if (scroll > position - windowHeight - 10) {
+            $(this).css({
+            'opacity' : 1
+            });
+        }
+    });
+
 });
 
 /* scroll project end */
