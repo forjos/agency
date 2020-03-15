@@ -197,3 +197,38 @@ type="text/javascript">jQuery(document).ready(function($) {
     });
 });
  /* client end*/
+
+
+
+
+ /* time */
+type="text/javascript">jQuery(document).ready(function($) {
+
+	var hours2 = document.getElementById("pfrx_contacts_local_time_hours");
+    var minutes2 = document.getElementById("pfrx_contacts_local_time_min");
+
+    function getNewTimezone (z) {
+
+        var zone = z || 0;
+        var localTime = new Date(); // получаем дату
+        var UTCTime = localTime.toUTCString(); // получаем дату по гринвичу
+        var dateArr = UTCTime.split(" ");
+        var timeArr = dateArr[dateArr.length-2].split(":");
+
+        // новое время согласно
+        return new Date(dateArr[3],localTime.getMonth(),dateArr[1],timeArr[0],(+timeArr[1] + zone),timeArr[2]);
+    }
+    setInterval(function () {
+        var time = getNewTimezone();
+        var time2 = getNewTimezone(420);
+        var h = time.getHours();
+        var h2 = time2.getHours();
+        var m = time.getMinutes();
+        var m2 = time2.getMinutes();
+
+        hours2.innerHTML = (h2.toString().length == 1) ? "0" + h2.toString() + " : " : h2.toString() + " : ";
+        minutes2.innerHTML = (m2.toString().length == 1) ? "0" + m2.toString() : m2.toString();
+    },300);
+
+});
+  /* time end */
