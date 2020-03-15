@@ -301,7 +301,7 @@ h1, h2, h3{
 }
 .pfrx_portfoliolist_link_go:hover{
 	letter-spacing: -1px;
-	padding-right:28px;
+	padding-right: 20%;
 }
 .pfrx_portfoliolist_link_go:hover:after{
 	width: 0;
@@ -332,7 +332,8 @@ h1, h2, h3{
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
-	grid-column: 3/9;
+	/*grid-column: 3/9;*/
+	grid-column: 4/10;
 }
 .pfrx_team_item{
 	grid-template-columns: repeat(6, 1fr);
@@ -365,8 +366,18 @@ h1, h2, h3{
 	font-size:.95em;
 	max-width:200px;
 }
-
-
+.pfrx_team_go_box{
+	margin: 5px 0;
+}
+.pfrx_team_go{
+	text-decoration: none;
+	font-size: .9em;
+	transition: letter-spacing .3s;
+}
+.pfrx_team_go:hover{
+	letter-spacing:-1px;
+	padding-right: 5px;
+}
 
 
 /* about menu */
