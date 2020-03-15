@@ -178,6 +178,11 @@ h1, h2, h3{
 	/*opacity: 0;*/
 	/*transition: 1s;*/
 }
+@media (max-width: 1024px) {
+	.pfrx_maincover_container {
+		min-height: 70vh;
+	}
+}
 .pfrx_maincover_heading_box{
 	grid-column: 4/9;
 	grid-row: 1/2;
