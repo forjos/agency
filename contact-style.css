@@ -1,0 +1,49 @@
+/* contact */
+.contact_page{
+	min-height: 100vh;
+	position:relative;
+}
+.pfrx_contacts_main{
+	font-family: 'BonVoyage';
+	display: block;
+	font-size: 2em;
+	margin-bottom: 1em;
+}
+.pfrx_contacts_second{
+	font-family: 'BonVoyage';
+	display: block;
+	font-size: 1.2em;
+}
+.pfrx_contacts_local_row{
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	padding: 15px 0;
+}
+.pfrx_contacts_col{
+	display:flex;
+	align-items: flex-end;
+}
+.pfrx_contacts_socnetwork_box{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+.pfrx_contacts_socnetwork_go{
+	font-size: .8em;
+	margin: 0 20px 0 0;
+}
+.pfrx_contacts_local_country{
+	font-size: 1.2em;
+}
+.pfrx_contacts_local_city{
+	font-size: 1em;
+}
+.pfrx_contacts_local_time{
+	font-family: 'BonVoyage';
+	font-size: 2em;
+}
+/* contact end */
