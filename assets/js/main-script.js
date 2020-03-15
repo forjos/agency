@@ -204,8 +204,8 @@ type="text/javascript">jQuery(document).ready(function($) {
  /* time */
 type="text/javascript">jQuery(document).ready(function($) {
 
-	var hours2 = document.getElementById("pfrx_contacts_local_time_hours");
-    var minutes2 = document.getElementById("pfrx_contacts_local_time_min");
+	var pfrx_hours = document.getElementById("pfrx_contacts_local_time_hours");
+    var pfrx_minutes = document.getElementById("pfrx_contacts_local_time_min");
 
     function getNewTimezone (z) {
 
@@ -226,8 +226,8 @@ type="text/javascript">jQuery(document).ready(function($) {
         var m = time.getMinutes();
         var m2 = time2.getMinutes();
 
-        hours2.innerHTML = (h2.toString().length == 1) ? "0" + h2.toString() + " : " : h2.toString() + " : ";
-        minutes2.innerHTML = (m2.toString().length == 1) ? "0" + m2.toString() : m2.toString();
+        pfrx_hours.innerHTML = (h2.toString().length == 1) ? "0" + h2.toString() + " : " : h2.toString() + " : ";
+        pfrx_minutes.innerHTML = (m2.toString().length == 1) ? "0" + m2.toString() : m2.toString();
     },300);
 
 });
