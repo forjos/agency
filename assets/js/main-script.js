@@ -185,6 +185,7 @@ type="text/javascript">jQuery(document).ready(function($) {
 
 /* client */
 type="text/javascript">jQuery(document).ready(function($) {
+   if($(".pfrx_swiper_container").length){
  var swiper = new Swiper('.pfrx_swiper_container', {
    spaceBetween: 30,
       effect: 'fade',
@@ -195,6 +196,7 @@ type="text/javascript">jQuery(document).ready(function($) {
       },
       loop: true,
     });
+}
 });
  /* client end*/
 
@@ -203,6 +205,9 @@ type="text/javascript">jQuery(document).ready(function($) {
 
  /* time */
 type="text/javascript">jQuery(document).ready(function($) {
+ if($("#pfrx_contacts_local_time_hours").length){
+    
+  
 
 	var pfrx_hours = document.getElementById("pfrx_contacts_local_time_hours");
     var pfrx_minutes = document.getElementById("pfrx_contacts_local_time_min");
@@ -230,5 +235,25 @@ type="text/javascript">jQuery(document).ready(function($) {
         pfrx_minutes.innerHTML = (m2.toString().length == 1) ? "0" + m2.toString() : m2.toString();
     },300);
 
+  }
 });
   /* time end */
+
+
+
+
+
+type="text/javascript">jQuery(document).ready(function($) {
+   if($(".pfrx_approach_container").length){
+ 
+var swiper = new Swiper('.pfrx_approach_container', {
+      slidesPerView: 1.9,
+      spaceBetween: 60,
+      freeMode: true,
+      centeredSlides: true,
+    });
+
+}
+});
+
+

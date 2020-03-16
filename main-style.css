@@ -445,3 +445,23 @@ h1, h2, h3{
 	align-items:center;
 }
 
+
+
+
+
+
+
+/* about slide */
+.pfrx_approach_container{
+	position: relative;
+	overflow-x: hidden;
+}
+.pfrx_approach_container ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.pfrx_approach_container img{
+	width: 100%;
+	height: auto;
+}
