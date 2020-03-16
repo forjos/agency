@@ -25,6 +25,9 @@ h1, h2, h3{
 	font-family: 'BonVoyage';
 	font-weight: 400;
 }
+.body_hidden{
+	overflow: hidden;
+}
 
 .pfrx_main{
 	padding-top: 200px;
@@ -99,7 +102,43 @@ h1, h2, h3{
 	opacity: 0;
 	transition: opacity .9s;
 }
+/* ui animation  ende*/
 
+/* hamburger */
+@media screen and (min-width: 992px){
+	.pfrx_hamburger_box{
+		display: none;
+	}
+}
+.pfrx_hamburger_box{
+	width: 45px;
+    height: 45px;
+    position:fixed;
+    z-index: 9999;
+    /*display: flex;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;*/
+}
+.pfrx_hamburger_line_one{
+	width: 40px;
+	height: 3px;
+	background-color: #E1D3B9;
+	position: absolute;
+	top:50%;
+	transform: translateY(-4px);
+	
+}
+.pfrx_hamburger_line_two{
+	width: 30px;
+	height: 3px;
+	background-color: #E1D3B9;
+	position: absolute;
+	top:50%;
+	transform: translateY(4px);
+	
+}
+/* hamburger end */
 /* menu */
 .pfrx_header{
 	position: absolute;
@@ -118,17 +157,64 @@ h1, h2, h3{
 	margin: 0;
 	position: fixed;
     left: auto;
-    top: auto;
+   	top: auto;
     z-index: 999;
 }
+@media screen and (max-width: 991px){
+	.pfrx_header_nav_box{
+		grid-area: nav;
+	}
+	.pfrx_header_email{
+		grid-area: email;
+		text-align: right;
+	}
+	.pfrx_header_logo{
+		grid-area: logo;
+	}
+	.pfrx_header_wrapper{
+		grid-template-columns: 1fr 1fr;
+    	grid-template-areas:
+        	'nav logo'
+        	'nav email';
+	}
+	.pfrx_header ul{
+	opacity: 0;
+	visibility: hidden;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	padding:10vh 0 0 5vw;
+	background:#8e4324;
+	transition: .6s;
+	}
+	.pfrx_header ul.pfrx_header_nav_activ{
+	opacity: 1;
+    visibility: visible;
+}
+	
+}
+
 .pfrx_header_nav li{
 	padding:4px 0;
 }
+@media screen and (max-width: 991px){
+	.pfrx_header_nav li{
+	margin: 1.5em 0;
+}
+}
+
 .pfrx_header_nav a{
 	text-transform: uppercase;
 	font-size:1.4em;
 	position: relative;
 	transition: letter-spacing .3s, padding .3s;
+}
+@media screen and (max-width: 991px){
+	.pfrx_header_nav a{
+	font-size:7vmax;
+	line-height: 1;
+}	
 }
 .pfrx_header_nav a:hover{
 	letter-spacing: -3.5px;

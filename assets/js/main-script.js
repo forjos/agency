@@ -1,3 +1,12 @@
+/* hamburger */
+type="text/javascript">jQuery(document).ready(function($) {
+  jQuery('.pfrx_hamburger_box').click(function(event) {
+    jQuery('.pfrx_header_nav').toggleClass('pfrx_header_nav_activ');
+    // jQuery('.sunplace_hamburger_box').toggleClass('sunplace_hamburger_box_acive');
+    jQuery('body').toggleClass('body_hidden');
+  });
+});
+
 /* auto height services listimg > img */
 type="text/javascript">jQuery(document).ready(function($) {
 // $(function(){
@@ -5,7 +14,7 @@ type="text/javascript">jQuery(document).ready(function($) {
 	// var contactbtn = $('.pfrx_maincover_about_contactbtn').width();
 	var portfoliolist_item = $('.pfrx_portfoliolist_shot').width();
 	// $('.pfrx_maincover_container').css({'padding-top': nav_height + 20, 'opacity': 1});
-	$('.pfrx_maincover_container').css('padding-top', nav_height + 20);
+	// $('.pfrx_maincover_container').css('padding-top', nav_height + 20);
 	// $('.pfrx_maincover_about_contactbtn').height(contactbtn);
 	$('.pfrx_portfoliolist_shot').height(portfoliolist_item / 1.8);
 
