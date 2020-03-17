@@ -55,6 +55,7 @@ h1, h2, h3{
 .pfrx_more_go{
 	display:flex;
 	align-items:center;
+	flex-wrap: wrap;
 }
 .pfrx_more_go>*{
 	margin:0;
@@ -81,18 +82,15 @@ h1, h2, h3{
     top: 50%;
     margin-top: -6px;
 }
-
-.pfrx_arrow_lg{
-	transform:translateX(250px);
-}
-
 .pfrx_more_text{
 	transition:.5s;
-	font-size: 2.5em;
+	/*font-size: 2.5em;*/
+	font-size: 3.5vmax;
     font-family: 'BonVoyage';
+    margin: 0 10% 10px 0;
 }
 .pfrx_more_go:hover .pfrx_more_text{
-	transform:translateX(150px);
+	/*transform:translateX(150px);*/
 	letter-spacing:-3.4px;
 }
 /** arrow more end **/
@@ -114,6 +112,7 @@ h1, h2, h3{
 	width: 45px;
     height: 45px;
     position:fixed;
+    transition:.3s;
     z-index: 9999;
     /*display: flex;
     flex-direction: column;
@@ -127,7 +126,7 @@ h1, h2, h3{
 	position: absolute;
 	top:50%;
 	transform: translateY(-4px);
-	
+	transition:.3s;
 }
 .pfrx_hamburger_line_two{
 	width: 30px;
@@ -136,7 +135,17 @@ h1, h2, h3{
 	position: absolute;
 	top:50%;
 	transform: translateY(4px);
-	
+	transition:.3s;
+}
+.pfrx_hamburger_box_active{
+	transform:rotate(10deg);
+}
+.pfrx_hamburger_box_active .pfrx_hamburger_line_one{
+	transform:rotate(30deg);
+	width:30px;
+}
+.pfrx_hamburger_box_active .pfrx_hamburger_line_two{
+	transform:rotate(-90deg);
 }
 /* hamburger end */
 /* menu */
@@ -186,7 +195,7 @@ h1, h2, h3{
 	height:100%;
 	padding:10vh 0 0 5vw;
 	background:#8e4324;
-	transition: .6s;
+	transition: opacity .6s;
 	}
 	.pfrx_header ul.pfrx_header_nav_activ{
 	opacity: 1;
@@ -228,7 +237,7 @@ h1, h2, h3{
 	position: absolute;
 	left: 0;
 	bottom: 0;
-	transition: .3s;
+	transition: width .3s;
 }
 .pfrx_header_nav a:hover:after{
 	width:0;
@@ -261,6 +270,7 @@ h1, h2, h3{
 }
 .pfrx_maincover_container{
 	min-height: 100vh;
+	padding-top: 200px;
 	/*opacity: 0;*/
 	/*transition: 1s;*/
 }

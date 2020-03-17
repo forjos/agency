@@ -2,6 +2,7 @@
 type="text/javascript">jQuery(document).ready(function($) {
   jQuery('.pfrx_hamburger_box').click(function(event) {
     jQuery('.pfrx_header_nav').toggleClass('pfrx_header_nav_activ');
+    jQuery('.pfrx_hamburger_box').toggleClass('pfrx_hamburger_box_active');
     // jQuery('.sunplace_hamburger_box').toggleClass('sunplace_hamburger_box_acive');
     jQuery('body').toggleClass('body_hidden');
   });
