@@ -386,8 +386,6 @@ h1, h2, h3{
 .pfrx_portfoliolist_link_go{
 	position: relative;
 	margin-top: 5px;
-    letter-spacing: 0.1em;
-    /*text-transform: capitalize;*/
     transition: letter-spacing .3s, padding .3s;
 }
 .pfrx_portfoliolist_link_go:after{
