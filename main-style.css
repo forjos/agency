@@ -660,3 +660,30 @@ h1, h2, h3{
 	width: 100%;
 	height: auto;
 }
+
+
+
+/* about 2 */
+.pfrx_wedo_header{
+	font-size: 4vmax;
+	text-transform: uppercase;
+}
+.pfrx_wedo_tag{
+	max-width: 780px;
+    font-size: 1.2em;
+    margin: 2em 0;
+}
+.pfrx_wedo_tag_header{
+	font-family: 'Nunito', sans-serif;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+.pfrx_wedo_tag_box{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.pfrx_wedo_tag_item{
+	font-size: 1.2em;
+	margin: .5em 0;
+}
