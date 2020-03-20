@@ -167,6 +167,11 @@ h1, h2, h3{
     padding: 30px 0 20px;
     font-family: 'BonVoyage';
 }
+@media screen and (max-width: 991px){
+	.pfrx_header{
+		padding: 10px 0 20px;
+	}
+}
 .pfrx_header a{
 	text-decoration: none;
 }
@@ -254,6 +259,28 @@ h1, h2, h3{
 }
 .pfrx_header_email{
 	font-size: 1em;
+}
+.pfrx_header_lang_go{
+	margin-left: 20px;
+	position: relative;
+	transition: letter-spacing .3s, padding .3s;
+}
+.pfrx_header_lang_go:hover{
+	letter-spacing:-1.2px;
+	padding-right:10px;
+}
+.pfrx_header_lang_go:after{
+	content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #E1D3B9;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: width .3s;
+}
+.pfrx_header_lang_go:hover:after{
+	width: 0;
 }
 @media screen and (max-width: 480px){
 	.pfrx_header_email{
@@ -669,14 +696,25 @@ h1, h2, h3{
 	text-transform: uppercase;
 }
 .pfrx_wedo_tag{
-	max-width: 780px;
+	/*max-width: 780px;*/
     font-size: 1.2em;
     margin: 2em 0;
 }
-.pfrx_wedo_tag_header{
+.pfrx_wedo_tag_subheader{
+	font-size: .76em;
+    margin: 70px 0 0px;
+    font-weight: 100;
+}
+/*.pfrx_wedo_tag_header{
 	font-family: 'Nunito', sans-serif;
 	font-size: 1.3em;
 	font-weight: bold;
+}*/
+.pfrx_wedo_tag_header{
+	margin: 3em 0 0;
+	background: #046d8c;
+    display: inline-block;
+    padding: 0 4px;
 }
 .pfrx_wedo_tag_box{
 	list-style-type: none;
@@ -684,6 +722,11 @@ h1, h2, h3{
 	padding: 0;
 }
 .pfrx_wedo_tag_item{
-	font-size: 1.2em;
+	font-size: 1.45vmax;
 	margin: .5em 0;
+}
+
+.pfrx_whenus_descr{
+	font-size: 2vmax;
+    max-width: 980px;
 }
